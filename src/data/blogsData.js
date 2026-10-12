@@ -17,7 +17,7 @@ export const blogsData = [
 9. Eat Crunchy Fruits and Vegetables: Apples and carrots can act as natural toothbrushes.
 10. Visit Your Dentist Regularly: Routine cleanings are essential for long-term health.
 
-At Anand Dental Hospital, we are deeply committed to making preventive care accessible to everyone. We proudly offer treatments under RGHS, ECHS, Ayushman, CGHS, and all TPA facility available. This ensures that you and your family can get the best care without financial stress.`
+At Radhe Dental Hospital, we are deeply committed to making preventive care accessible to everyone. We proudly offer treatments under ECHS, Ayushman, CGHS, and all TPA facility available. This ensures that you and your family can get the best care without financial stress.`
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ First and foremost, a professional cleaning removes tartar (calculus) that simpl
 
 Furthermore, these visits are vital for early detection. Your dentist can spot the very beginnings of a cavity, a cracked tooth, or even early signs of oral cancer. Catching these issues early means the treatments are less invasive, less painful, and significantly less expensive. Preventative care is the cornerstone of dental health.
 
-Don't let the fear of medical bills deter you from taking care of your teeth. At our clinic, we believe high-quality dental care should be accessible to all. We accept RGHS, ECHS, Ayushman, CGHS, and all TPA facility available, making it seamless and highly affordable for you to prioritize your family's preventive dental care.`
+Don't let the fear of medical bills deter you from taking care of your teeth. At our clinic, we believe high-quality dental care should be accessible to all. We accept ECHS, Ayushman, CGHS, and all TPA facility available, making it seamless and highly affordable for you to prioritize your family's preventive dental care.`
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ The journey begins with a thorough consultation where our specialists listen to 
 • Orthodontics or Clear Aligners: To correct crooked or misaligned teeth seamlessly.
 • Dental Implants: To replace missing teeth permanently and naturally.
 
-The result is a stunning, natural-looking smile that can drastically improve your self-esteem and the way you interact with the world. Patients can take advantage of our comprehensive billing network for covered restorative treatments. We proudly support RGHS, ECHS, Ayushman, CGHS, and all TPA facility available, giving you peace of mind while you upgrade your smile.`
+The result is a stunning, natural-looking smile that can drastically improve your self-esteem and the way you interact with the world. Patients can take advantage of our comprehensive billing network for covered restorative treatments. We proudly support ECHS, Ayushman, CGHS, and all TPA facility available, giving you peace of mind while you upgrade your smile.`
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ When the inner pulp of a tooth—which contains nerves and blood vessels—becom
 
 Thanks to modern anesthetics and advanced dental techniques, a root canal is typically no more uncomfortable than getting a standard filling. After the procedure, the tooth is usually capped with a crown to restore its full strength and function, allowing you to keep your natural tooth for a lifetime.
 
-We strive to provide comfortable, stress-free care. We remind our patients that we are empaneled with RGHS, ECHS, Ayushman, CGHS, and all TPA facility available, ensuring that this essential tooth-saving treatment is financially accessible to our community.`
+We strive to provide comfortable, stress-free care. We remind our patients that we are empaneled with ECHS, Ayushman, CGHS, and all TPA facility available, ensuring that this essential tooth-saving treatment is financially accessible to our community.`
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ Early dental visits are not just about checking for cavities; they are about pre
 
 As parents, you play a crucial role. You should clean your baby's gums with a soft, damp cloth even before teeth emerge, and transition to a soft-bristled toothbrush once teeth appear. Limit sugary snacks and avoid putting your baby to bed with a bottle of milk or juice, which can cause severe decay.
 
-We provide a fun, gentle, and friendly environment for children of all ages. For parents concerned about healthcare coverage, we gladly accept RGHS, ECHS, Ayushman, CGHS, and all TPA facility available, ensuring your child's dental foundation is built on solid, affordable care.`
+We provide a fun, gentle, and friendly environment for children of all ages. For parents concerned about healthcare coverage, we gladly accept ECHS, Ayushman, CGHS, and all TPA facility available, ensuring your child's dental foundation is built on solid, affordable care.`
   },
   {
     id: 6,
@@ -85,7 +85,7 @@ Dentures are removable appliances that replace missing teeth and surrounding tis
 
 Dental implants, on the other hand, are titanium posts surgically inserted into the jawbone, acting as artificial tooth roots. Once healed, they are topped with lifelike crowns. Implants are a permanent solution that functions, feels, and looks exactly like natural teeth. A major benefit of implants is that they stimulate the jawbone, preventing the bone loss that typically occurs when teeth are missing.
 
-During your consultation, our specialists will evaluate your bone density, lifestyle, and budget to help you choose the best option. Remember, we offer treatments backed by RGHS, ECHS, Ayushman, CGHS, and all TPA facility available for qualifying procedures.`
+During your consultation, our specialists will evaluate your bone density, lifestyle, and budget to help you choose the best option. Remember, we offer treatments backed by ECHS, Ayushman, CGHS, and all TPA facility available for qualifying procedures.`
   },
   {
     id: 7,
@@ -98,7 +98,7 @@ Foods rich in calcium and phosphorus—such as cheese, milk, yogurt, leafy green
 
 Conversely, a diet high in sugar and refined carbohydrates provides a feast for the harmful bacteria in your mouth. These bacteria produce acids that erode tooth enamel, leading directly to cavities. Acidic beverages like soda, sports drinks, and citrus juices can also wear away enamel over time, making teeth sensitive and vulnerable.
 
-Maintaining a balanced diet is your first line of defense. If dietary habits have already caused dental issues, don't worry. Our expert team is here to help, and we support RGHS, ECHS, Ayushman, CGHS, and all TPA facility available to cover your restorative dental needs.`
+Maintaining a balanced diet is your first line of defense. If dietary habits have already caused dental issues, don't worry. Our expert team is here to help, and we support ECHS, Ayushman, CGHS, and all TPA facility available to cover your restorative dental needs.`
   },
   {
     id: 8,
@@ -111,7 +111,7 @@ OTC whitening products often contain lower concentrations of bleaching agents (l
 
 Professional teeth whitening at a dental clinic is the safest and most effective route. Dentists use high-concentration bleaching gels that offer immediate, striking results—often lightening teeth several shades in a single hour-long session. Because the procedure is monitored by a professional, your gums and enamel are fully protected. Custom take-home trays provided by a dentist also offer a safe, gradual approach with professional-grade gel.
 
-We provide exceptional, safe cosmetic options tailored to you. For other general and restorative health needs, we are proud to offer RGHS, ECHS, Ayushman, CGHS, and all TPA facility available.`
+We provide exceptional, safe cosmetic options tailored to you. For other general and restorative health needs, we are proud to offer ECHS, Ayushman, CGHS, and all TPA facility available.`
   },
   {
     id: 9,
@@ -120,13 +120,13 @@ We provide exceptional, safe cosmetic options tailored to you. For other general
     excerpt: "Fear of the dentist is common, but it shouldn't stop you from getting the care you need.",
     content: `Dental anxiety is incredibly common, affecting millions of people worldwide. This fear can stem from past negative experiences, a fear of needles, the sound of the drill, or simply a feeling of loss of control. Unfortunately, avoiding the dentist due to anxiety often leads to more severe dental problems that eventually require more complex treatments.
 
-At Anand Dental Hospital, we understand these fears and are dedicated to providing a stress-free, compassionate environment. Here is how we help you manage dental anxiety:
+At Radhe Dental Hospital, we understand these fears and are dedicated to providing a stress-free, compassionate environment. Here is how we help you manage dental anxiety:
 • Clear Communication: We explain every step of the procedure so there are no surprises. You are always in control.
 • Gentle Techniques: We use state-of-the-art tools and gentle methods to ensure maximum comfort.
 • Hand Signals: We establish a hand signal (like raising your left hand) so you can tell us to pause the treatment at any time.
 • Distraction: Listening to music or podcasts during your procedure can help take your mind off the sounds.
 
-We encourage patients to speak up about their fears so we can adjust our approach to suit you. We also remove the financial anxiety of dental care by accepting RGHS, ECHS, Ayushman, CGHS, and all TPA facility available, so you can focus entirely on your health.`
+We encourage patients to speak up about their fears so we can adjust our approach to suit you. We also remove the financial anxiety of dental care by accepting ECHS, Ayushman, CGHS, and all TPA facility available, so you can focus entirely on your health.`
   },
   {
     id: 10,
@@ -139,7 +139,7 @@ Gingivitis is primarily caused by poor oral hygiene that allows plaque—a stick
 
 The fantastic news about gingivitis is that it is completely reversible. If caught early, professional dental cleanings coupled with excellent daily brushing and flossing can restore your gums to full health. However, if ignored, gingivitis can advance to periodontitis, a severe infection that destroys the bone supporting your teeth and eventually leads to tooth loss.
 
-Don't wait for the condition to worsen. We offer extensive periodontal care, supported by RGHS, ECHS, Ayushman, CGHS, and all TPA facility available to keep your gums and foundation perfectly healthy.`
+Don't wait for the condition to worsen. We offer extensive periodontal care, supported by ECHS, Ayushman, CGHS, and all TPA facility available to keep your gums and foundation perfectly healthy.`
   },
   {
     id: 11,
@@ -152,7 +152,7 @@ Invisible aligners have surged in popularity, especially among adults and respon
 
 Traditional metal braces consist of metal brackets glued to the teeth and connected by a wire. While they are more visible, they are incredibly powerful and often the necessary choice for severe crowding, significant bite issues, or complex misalignments. They are fixed in place, eliminating the temptation to remove them.
 
-Our skilled orthodontists can guide you to the right choice based on your clinical needs and lifestyle. Whichever path you take, you can rely on our clinic's broad acceptance of health schemes, including RGHS, ECHS, Ayushman, CGHS, and all TPA facility available for covered treatments.`
+Our skilled orthodontists can guide you to the right choice based on your clinical needs and lifestyle. Whichever path you take, you can rely on our clinic's broad acceptance of health schemes, including ECHS, Ayushman, CGHS, and all TPA facility available for covered treatments.`
   },
   {
     id: 12,
@@ -165,7 +165,7 @@ Every day, the enamel on your teeth undergoes a cycle of demineralization (losin
 
 Fluoride tips the scale in your favor. When fluoride is present in your mouth (from toothpaste or drinking water), it gets absorbed into the enamel alongside calcium and phosphate, creating a new, stronger mineral called fluorapatite. This makes your teeth highly resistant to future acid attacks. It can even reverse very early microscopic decay before a physical cavity forms.
 
-Using a fluoride toothpaste twice daily is essential. For patients at a higher risk of cavities, we provide professional, concentrated fluoride treatments during regular checkups. Your comprehensive preventive care is fully supported at our hospital, where we proudly offer RGHS, ECHS, Ayushman, CGHS, and all TPA facility available for your convenience.`
+Using a fluoride toothpaste twice daily is essential. For patients at a higher risk of cavities, we provide professional, concentrated fluoride treatments during regular checkups. Your comprehensive preventive care is fully supported at our hospital, where we proudly offer ECHS, Ayushman, CGHS, and all TPA facility available for your convenience.`
   },
   {
     id: 13,
@@ -178,7 +178,7 @@ Using a fluoride toothpaste twice daily is essential. For patients at a higher r
 • Cracked or Broken Tooth: Rinse your mouth with warm water to clean the area. Apply a cold compress to your face to keep swelling down and see a dentist immediately.
 • Severe Toothache: Clean the area gently with a toothbrush and floss to ensure no food is wedged between the teeth. Rinse with warm salt water. Do not put aspirin directly on the gums. Seek dental care promptly.
 
-We provide immediate, compassionate emergency care to alleviate your pain and restore your smile. Rest assured, our emergency diagnostic and surgical services are accessible through RGHS, ECHS, Ayushman, CGHS, and all TPA facility available.`
+We provide immediate, compassionate emergency care to alleviate your pain and restore your smile. Rest assured, our emergency diagnostic and surgical services are accessible through ECHS, Ayushman, CGHS, and all TPA facility available.`
   },
   {
     id: 14,
@@ -195,7 +195,7 @@ When wisdom teeth do not have sufficient space, they become "impacted" (trapped 
 
 To prevent these complications, dentists often recommend proactive extraction of wisdom teeth. The procedure is performed under local anesthesia or sedation, ensuring you are entirely comfortable. Recovery usually takes a few days of rest and a soft diet. 
 
-Our oral surgeons perform safe and comfortable extractions using advanced techniques. If you or your teenager are experiencing wisdom tooth pain, visit us today. We proudly accept RGHS, ECHS, Ayushman, CGHS, and all TPA facility available to cover these surgical procedures.`
+Our oral surgeons perform safe and comfortable extractions using advanced techniques. If you or your teenager are experiencing wisdom tooth pain, visit us today. We proudly accept ECHS, Ayushman, CGHS, and all TPA facility available to cover these surgical procedures.`
   },
   {
     id: 15,
@@ -208,7 +208,7 @@ Smoking is one of the most significant risk factors for the development and prog
 
 Additionally, smoking causes persistent bad breath (halitosis), severely stains teeth a yellow or brown color, dulls your sense of taste, and dramatically increases your risk of developing oral cancer.
 
-Quitting smoking is the most important step you can take for your oral and systemic health. Our team can help monitor your oral tissues for early signs of disease and work with you to reverse some of the gum damage. We stand by our patients in their journey to better health, accepting RGHS, ECHS, Ayushman, CGHS, and all TPA facility available.`
+Quitting smoking is the most important step you can take for your oral and systemic health. Our team can help monitor your oral tissues for early signs of disease and work with you to reverse some of the gum damage. We stand by our patients in their journey to better health, accepting ECHS, Ayushman, CGHS, and all TPA facility available.`
   },
   {
     id: 16,
@@ -223,7 +223,7 @@ Studies have linked poor oral health to:
 • Diabetes: Gum disease can make it significantly harder to control blood sugar levels, while diabetes simultaneously increases the risk of gum disease.
 • Respiratory Infections: Bacteria from the mouth can be inhaled into the lungs, leading to pneumonia.
 
-Maintaining a healthy mouth through daily brushing, flossing, and regular professional checkups is crucial for a long, healthy life. We make holistic, preventative health care achievable by offering services under RGHS, ECHS, Ayushman, CGHS, and all TPA facility available.`
+Maintaining a healthy mouth through daily brushing, flossing, and regular professional checkups is crucial for a long, healthy life. We make holistic, preventative health care achievable by offering services under ECHS, Ayushman, CGHS, and all TPA facility available.`
   },
   {
     id: 17,
@@ -240,7 +240,7 @@ Here is how you can manage it:
 3. Avoid Acidic Foods: Citrus fruits, tomatoes, and sodas can dissolve enamel over time.
 4. Get a Dental Checkup: Sometimes, sensitivity is a sign of a larger issue, like a cavity, a cracked tooth, or severe gum recession.
 
-We provide comprehensive care and professional desensitizing treatments (like fluoride varnishes or bonding) to alleviate your pain. We accept RGHS, ECHS, Ayushman, CGHS, and all TPA facility available for these essential restorative treatments.`
+We provide comprehensive care and professional desensitizing treatments (like fluoride varnishes or bonding) to alleviate your pain. We accept ECHS, Ayushman, CGHS, and all TPA facility available for these essential restorative treatments.`
   },
   {
     id: 18,
@@ -253,7 +253,7 @@ The process typically begins with a physical exam of your entire mouth. The dent
 
 After scaling, your teeth are polished with a high-powered electric brush and gritty prophylaxis paste. This removes surface stains and leaves your teeth feeling incredibly smooth. Finally, expert flossing removes any leftover debris, and a fluoride treatment may be applied to strengthen your enamel.
 
-It is a straightforward, virtually painless process that leaves your mouth feeling wonderfully fresh. Schedule your cleaning today without worry, as we are proudly empaneled with RGHS, ECHS, Ayushman, CGHS, and all TPA facility available.`
+It is a straightforward, virtually painless process that leaves your mouth feeling wonderfully fresh. Schedule your cleaning today without worry, as we are proudly empaneled with ECHS, Ayushman, CGHS, and all TPA facility available.`
   },
   {
     id: 19,
@@ -271,7 +271,7 @@ Fact: Sugar itself does not rot your teeth. However, the naturally occurring bac
 Myth 3: If your gums bleed, you should stop brushing them.
 Fact: Bleeding gums are a sign of inflammation (gingivitis). Stopping brushing will only allow more plaque to accumulate, worsening the problem. You should continue to brush and floss gently and see a dentist.
 
-Get the facts straight from our dental experts. Education and preventive care are at the core of what we do, and we make it affordable through RGHS, ECHS, Ayushman, CGHS, and all TPA facility available.`
+Get the facts straight from our dental experts. Education and preventive care are at the core of what we do, and we make it affordable through ECHS, Ayushman, CGHS, and all TPA facility available.`
   },
   {
     id: 20,
@@ -288,6 +288,6 @@ The benefits for patients are immense:
 • Lower Infection Risk: The high-energy beam sterilizes the area being worked on.
 • Faster Recovery: Less tissue trauma means you bounce back to normal much quicker.
 
-Experience the comfortable future of dentistry at Anand Dental Hospital, where we utilize cutting-edge tech and proudly accept RGHS, ECHS, Ayushman, CGHS, and all TPA facility available for your benefit.`
+Experience the comfortable future of dentistry at Radhe Dental Hospital, where we utilize cutting-edge tech and proudly accept ECHS, Ayushman, CGHS, and all TPA facility available for your benefit.`
   }
 ];

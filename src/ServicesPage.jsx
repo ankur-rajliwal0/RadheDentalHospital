@@ -26,7 +26,6 @@ import 'aos/dist/aos.css';
 import heroDentists from './assets/image.png';
 import doctorPortrait from './assets/image copy.png';
 import hospitalLogo from './assets/logo.png';
-import rghsLogo from './assets/RGHSScheme.png';
 import dentistMaskBg from './assets/dentist_mask_bg.jpg';
 import staff1 from './assets/staff_1.jpg';
 import staff2 from './assets/staff_2.jpg';
@@ -35,14 +34,6 @@ import staffImg2 from './assets/WhatsApp Image 2026-10-07 at 5.43.34 PM.jpeg';
 import staffImg3 from './assets/image copy 2.png';
 import staffImg4 from './assets/image copy 3.png';
 import smilingWoman from './assets/smiling_woman.jpg';
-import surgeryCollage from './assets/surgery_collage.jpg';
-import surgerySlide1 from './assets/image copy 4.png';
-import surgerySlide2 from './assets/image copy 5.png';
-import surgerySlide3 from './assets/image copy 6.png';
-import surgerySlide4 from './assets/image copy 7.png';
-import surgerySlide5 from './assets/image copy 8.png';
-import receptionBg from './assets/reception.jpg';
-import dentistBlurBg from './assets/dentist_blur_bg.jpg';
 import Lenis from '@studio-freight/lenis';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
@@ -83,19 +74,6 @@ function ServicesPage() {
    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
    const handleScroll = () => setOffsetY(window.scrollY);
 
-   const surgeryImages = [surgeryCollage, surgerySlide1, surgerySlide2, surgerySlide3, surgerySlide4, surgerySlide5];
-   const [currentSurgerySlide, setCurrentSurgerySlide] = useState(0);
-
-   useEffect(() => {
-      const interval = setInterval(() => {
-         setCurrentSurgerySlide((prev) => (prev + 1) % surgeryImages.length);
-      }, 1500);
-      return () => clearInterval(interval);
-   }, [surgeryImages.length]);
-
-   const nextSurgerySlide = () => setCurrentSurgerySlide((prev) => (prev + 1) % surgeryImages.length);
-   const prevSurgerySlide = () => setCurrentSurgerySlide((prev) => (prev === 0 ? surgeryImages.length - 1 : prev - 1));
-
    useEffect(() => {
       AOS.init({ duration: 1000, once: true, offset: 50 });
       setTimeout(() => AOS.refresh(), 500); // Give time for images to load
@@ -134,12 +112,8 @@ function ServicesPage() {
          <header className="bg-white py-3 px-8 sticky top-0 z-50 shadow-sm">
             <div className="max-w-[1250px] mx-auto flex justify-between items-center relative">
                <div className="flex items-center">
-                  <img src={hospitalLogo} alt="Anand Dental Jaipur Logo" className="h-[70px] w-auto" />
-                  <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE</span>
-               </div>
-
-               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center">
-                  <img src={rghsLogo} alt="RGHS Scheme" className="h-[90px] w-auto" />
+                  <img src={hospitalLogo} alt="Radhe Dental Hospital Logo" className="h-[70px] w-auto" />
+                  <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RADHE DENTAL HOSPITAL</span>
                </div>
 
                {/* Desktop Nav */}
@@ -354,23 +328,21 @@ function ServicesPage() {
                      </div>
                   </div>
 
-                  {/* Column 2: Anand Dental */}
+                  {/* Column 2: Radhe Dental */}
                   <div className="w-full md:w-[35%] flex flex-col" data-aos="fade-up" data-aos-delay="200">
                      <div className="flex items-start space-x-4 mb-6">
                         <div className="bg-white rounded-full p-1 mt-1 shadow-sm">
                            <Clock className="w-4 h-4 text-[#1762c9]" />
                         </div>
                         <div>
-                           <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL<br />AND DIAGNOSTIC CENTRE</h4>
-                           <p className="text-[14px] font-medium leading-relaxed max-w-[280px] text-white">
-                              45,46, Opp. Parth Chiranjivi Complex,<br />
-                              Hanuman Vatika A, Gokulpura,<br />
-                              Jaipur, Rajasthan 302012
+                           <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RADHE DENTAL HOSPITAL</h4>
+                           <p className="text-[14px] font-medium leading-relaxed max-w-[340px] text-white">
+                              US Plaza Building, Kanakpura Road,<br />Near US Paradise, Sangh Shakti Road,<br />Ashok Vihar Vistar, Gokulpura,<br />Jaipur, Rajasthan 302012
                            </p>
                         </div>
                      </div>
                      <div className="w-full h-[200px] rounded-sm overflow-hidden border-2 border-white/20 shadow-lg mt-auto">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.7639586648697!2d75.70951398053819!3d26.942696516369644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db30020854b0f%3A0xd2dfd395e3eb1f13!2sANAND%20DENTAL!5e0!3m2!1sen!2sin!4v1791226542150!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.091316719879!2d75.7259627!3d26.932319399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3d96bffdafd%3A0x6f406c3aec646c5f!2sRadhe%20Dental%20Hospital!5e0!3m2!1sen!2sin!4v1791771516836!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
                      </div>
                   </div>
 

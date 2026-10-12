@@ -24,12 +24,9 @@ import {
 } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import heroDentists from './assets/image.png';
-import doctorPortrait from './assets/WhatsApp Image 2026-10-07 at 9.03.58 PM.jpeg';
+import heroDentists from './assets/hero_radhe.png';
+import doctorPortrait from './assets/doctor_savita.png';
 import hospitalLogo from './assets/logo.png';
-import rghsLogo from './assets/RGHSScheme.png';
-import rghsPdf from './assets/List_of_empaneled_hospitals_under_RGHS.pdf';
-import { jaipurHospitals } from './data/jaipurHospitals';
 import dentistMaskBg from './assets/dentist_mask_bg.jpg';
 import staff1 from './assets/staff_1.jpg';
 import staff2 from './assets/staff_2.jpg';
@@ -38,15 +35,14 @@ import staffImg2 from './assets/WhatsApp Image 2026-10-07 at 5.43.34 PM.jpeg';
 import staffImg3 from './assets/image copy 2.png';
 import staffImg4 from './assets/image copy 3.png';
 import smilingWoman from './assets/smiling_woman.jpg';
-import surgeryCollage from './assets/surgery_collage.jpg';
-import surgerySlide1 from './assets/image copy 4.png';
-import surgerySlide2 from './assets/image copy 5.png';
-import surgerySlide3 from './assets/image copy 6.png';
-import surgerySlide4 from './assets/image copy 7.png';
-import surgerySlide5 from './assets/image copy 8.png';
+import clinicSlide1 from './assets/image copy 12.png';
+import clinicSlide2 from './assets/image copy 13.png';
+import clinicSlide3 from './assets/image copy 14.png';
+import clinicSlide4 from './assets/image copy 15.png';
+import clinicSlide5 from './assets/image copy 16.png';
 import staffImg5 from './assets/image copy 9.png';
-import receptionBg from './assets/reception.jpg';
-import dentistBlurBg from './assets/dentist_blur_bg.jpg';
+import clinicCabinBg from './assets/image copy 17.png';
+import doctorWhiteCoatBg from './assets/image copy 18.png';
 import Lenis from '@studio-freight/lenis';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
@@ -257,13 +253,13 @@ function App() {
    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
    const handleScroll = () => setOffsetY(window.scrollY);
 
-   const surgeryImages = [surgeryCollage, surgerySlide1, surgerySlide2, surgerySlide3, surgerySlide4, surgerySlide5];
+   const surgeryImages = [clinicSlide1, clinicSlide2, clinicSlide3, clinicSlide4, clinicSlide5];
    const [currentSurgerySlide, setCurrentSurgerySlide] = useState(0);
 
    useEffect(() => {
       const interval = setInterval(() => {
          setCurrentSurgerySlide((prev) => (prev + 1) % surgeryImages.length);
-      }, 1500);
+      }, 3000);
       return () => clearInterval(interval);
    }, [surgeryImages.length]);
 
@@ -308,12 +304,8 @@ function App() {
          <header className="bg-white py-3 px-8 sticky top-0 z-50 shadow-sm">
             <div className="max-w-[1250px] mx-auto flex justify-between items-center relative">
                <div className="flex items-center">
-                  <img src={hospitalLogo} alt="Anand Dental Jaipur Logo" className="h-[70px] w-auto" />
-                  <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE</span>
-               </div>
-
-               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center">
-                  <img src={rghsLogo} alt="RGHS Scheme" className="h-[90px] w-auto" />
+                  <img src={hospitalLogo} alt="Radhe Dental Hospital Logo" className="h-[70px] w-auto" />
+                  <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RADHE DENTAL HOSPITAL</span>
                </div>
 
                {/* Desktop Nav */}
@@ -347,74 +339,96 @@ function App() {
          </header>
 
          {/* Hero Section */}
-         <section className="relative min-h-[500px] md:min-h-[700px] flex items-center bg-transparent overflow-hidden">
-            {/* Background Image (Right side on desktop, Full on mobile) */}
-            <div className="absolute inset-0 right-0 w-full h-full z-0 overflow-hidden" data-aos="fade-left" data-aos-duration="1500">
-               <img
-                  src={heroDentists}
-                  alt="Team of Dentists"
-                  className="w-full h-full object-contain object-top md:object-cover md:object-center"
-                  style={{ transform: `translateY(${offsetY * 0.3}px)` }}
-               />
-            </div>
+         <section className="relative min-h-[580px] lg:min-h-[660px] flex items-center bg-[#f0f6fc] overflow-hidden py-10 lg:py-0">
+            {/* Background Ambient Glows */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-200/40 rounded-full blur-3xl pointer-events-none z-0"></div>
+            <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-emerald-100/40 rounded-full blur-3xl pointer-events-none z-0"></div>
 
-            {/* Slanted Light Grey Overlay (Desktop Only) */}
-            <div className="absolute top-0 left-0 w-full h-full bg-[#f4f6f9] z-10 hidden md:block md:[clip-path:polygon(0_0,56%_0,46%_55%,68%_100%,0_100%)]"></div>
+            {/* Layer 1: Slanted Accent Overlay (Desktop Only - Soft Blue Chevron) */}
+            <div className="absolute top-0 left-0 w-full h-full bg-[#d6e8f8] z-10 hidden lg:block [clip-path:polygon(0_0,51%_0,56%_50%,47%_100%,0_100%)]"></div>
 
-            {/* Slanted White Overlay (Desktop Only) */}
-            <div className="absolute top-0 left-0 w-full h-full bg-white z-10 hidden md:block md:[clip-path:polygon(0_0,50%_0,40%_55%,62%_100%,0_100%)]"></div>
+            {/* Layer 2: Slanted White Surface (Desktop Only - Crisp White Chevron) */}
+            <div className="absolute top-0 left-0 w-full h-full bg-white z-10 hidden lg:block [clip-path:polygon(0_0,48%_0,53%_50%,44%_100%,0_100%)] shadow-2xl"></div>
 
-            {/* Content */}
-            <div className="relative z-20 w-full max-w-[1400px] mx-auto md:px-8 md:pt-12 md:pb-20 flex flex-col justify-center min-h-[500px] md:min-h-0">
+            {/* Content Container */}
+            <div className="relative z-20 w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 py-6 lg:py-12">
+               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                  
+                  {/* Left Column: Text & CTA inside the stylish white chevron */}
+                  <div className="lg:col-span-5 flex flex-col justify-center text-center lg:text-left pt-4 lg:pt-0" data-aos="fade-right">
+                     <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-[#1D70B8] px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5 self-center lg:self-start shadow-sm">
+                        <span className="w-2 h-2 rounded-full bg-[#1D70B8] animate-ping"></span>
+                        A leading visionary in dental care
+                     </div>
 
-               <div className="w-full md:w-[45%]">
-                  {/* Mobile White Background Box */}
-                  <div className="relative pt-16 pb-8 md:p-0 hidden md:block" data-aos="fade-right">
-                     {/* Mobile slanted background */}
-                     <div className="absolute inset-0 bg-white/95 backdrop-blur-sm z-[-1] block md:hidden [clip-path:polygon(0_0,60%_0,75%_100%,0_100%)]"></div>
+                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-serif text-gray-900 font-bold leading-[1.18] mb-5 tracking-tight">
+                        Set a Long-Lasting Impression With A <span className="text-[#1D70B8]">Beautiful Smile!</span>
+                     </h1>
 
-                     <div className="text-center md:text-left pr-[25%] pl-[2%] md:p-0">
-                        <p className="text-gray-500 font-medium mb-3 md:mb-4 uppercase text-[10px] md:text-sm tracking-wider">A leading visionary in dental care.</p>
-                        <h1 className="text-[28px] leading-[1.3] md:text-5xl lg:text-6xl font-serif text-[#333] font-bold mb-4 md:mb-6">
-                           Set a Long-Lasting<br className="block md:hidden" /> Impression<br />
-                           With A Beautiful Smile!
-                        </h1>
-                        <p className="text-gray-500 mb-2 md:mb-8 font-medium text-[11px] md:text-base px-2 md:px-0">
-                           Without Going Through <span className="text-gray-800 font-bold">Heavy Pain & Pocket-Burning Costs!</span>
-                        </p>
+                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+                        Without Going Through <span className="text-gray-900 font-bold">Heavy Pain & Pocket-Burning Costs!</span> Experience gentle, painless treatments with state-of-the-art facilities in Jaipur.
+                     </p>
+
+                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 mb-8">
+                        <a
+                           href="tel:+919462209414"
+                           className="w-full sm:w-auto inline-flex items-center justify-center bg-[#1D70B8] hover:bg-blue-700 text-white font-bold py-3.5 px-8 rounded-full shadow-lg shadow-blue-500/25 transition-all hover:scale-105 duration-300 text-base"
+                        >
+                           Book Appointment
+                        </a>
+                        <a
+                           href="tel:+919462209414"
+                           className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-[#1D70B8] text-[#1D70B8] hover:bg-blue-50 font-bold py-3 px-6 rounded-full transition-all duration-300 text-base"
+                        >
+                           📞 +91 94622 09414
+                        </a>
+                     </div>
+
+                     {/* Trust Badges */}
+                     <div className="pt-5 border-t border-gray-200/80 grid grid-cols-3 gap-3 text-center sm:text-left">
+                        <div>
+                           <div className="text-xl sm:text-2xl font-black text-[#1D70B8]">14+</div>
+                           <div className="text-[11px] text-gray-500 font-semibold uppercase tracking-wider">Years Exp.</div>
+                        </div>
+                        <div>
+                           <div className="text-xl sm:text-2xl font-black text-[#00a651]">100%</div>
+                           <div className="text-[11px] text-gray-500 font-semibold uppercase tracking-wider">Care & Trust</div>
+                        </div>
+                        <div>
+                           <div className="text-xl sm:text-2xl font-black text-amber-500">4.9 ★</div>
+                           <div className="text-[11px] text-gray-500 font-semibold uppercase tracking-wider">Top Rated</div>
+                        </div>
                      </div>
                   </div>
 
-                  {/* Button outside the white box on mobile */}
-                  <div className="text-center md:text-left mt-[350px] md:mt-0 pb-12 md:pb-0" data-aos="fade-up">
-                     <a href="tel:+919462209414" className="inline-block bg-[#4aa5ff] hover:bg-blue-600 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full shadow-xl transition-transform hover:scale-105 duration-300 text-[15px] md:text-lg">
-                        Book Appointment
-                     </a>
+                  {/* Right Column: Complete Uncut Image in stylish presentation */}
+                  <div className="lg:col-span-7 flex justify-center lg:justify-end items-center" data-aos="fade-left" data-aos-duration="1000">
+                     <div className="relative w-full max-w-[580px] lg:max-w-[620px]">
+                        {/* Decorative angled background backdrop mirroring the chevron */}
+                        <div className="absolute -inset-2.5 bg-gradient-to-tr from-[#1D70B8]/25 via-[#00a651]/20 to-blue-400/20 rounded-3xl transform rotate-1 filter blur-sm -z-10"></div>
+                        
+                        {/* Image Showcase Frame */}
+                        <div className="relative bg-white p-2.5 sm:p-3.5 rounded-2xl lg:rounded-3xl shadow-[0_25px_60px_rgba(29,112,184,0.18)] border-2 border-white/80 overflow-hidden">
+                           <img
+                              src={heroDentists}
+                              alt="Radhe Dental Hospital - Dr. Savita Yadav"
+                              className="w-full h-auto object-contain block rounded-xl lg:rounded-2xl transform hover:scale-[1.01] transition-transform duration-500"
+                           />
+
+                           {/* Bottom Credentials Pill */}
+                           <div className="mt-3 pt-2.5 border-t border-gray-100 flex items-center justify-between px-2 text-xs sm:text-sm">
+                              <div className="flex items-center gap-2">
+                                 <span className="w-2.5 h-2.5 rounded-full bg-[#00a651] animate-pulse"></span>
+                                 <span className="font-bold text-gray-800">Radhe Dental Hospital</span>
+                              </div>
+                              <span className="text-[#1D70B8] font-bold text-xs bg-blue-50 border border-blue-100 px-3 py-1 rounded-full shadow-sm">
+                                 Dr. Savita Yadav (BDS, MDS)
+                              </span>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-               </div>
 
-            </div>
-         </section>
-
-         {/* RGHS Banner */}
-         <section className="bg-white py-4 px-8 pt-8">
-            <div className="max-w-[1250px] mx-auto bg-[#ebf8f0] flex flex-col md:flex-row items-stretch justify-between min-h-[220px]">
-               <div className="bg-[#1D70B8] p-6 flex flex-col items-center justify-center md:w-[280px]">
-                  <img src={hospitalLogo} alt="Hospital Logo" className="h-[100px] bg-white p-2 rounded-full mb-2 shadow-lg" />
-                  <div className="text-white font-bold tracking-widest text-[12px] text-center leading-relaxed mt-3 px-4">RGHS APPROVED ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE</div>
-               </div>
-
-               <div className="flex items-center justify-center flex-1 py-8 md:py-0">
-                  <h2 className="text-5xl md:text-6xl font-black text-[#00a651] text-center tracking-wide uppercase leading-tight">
-                     RGHS<br />APPROVED
-                  </h2>
-               </div>
-
-               <div className="bg-[#dcf2e3] md:w-[350px] flex flex-col items-center justify-center relative overflow-hidden py-12 md:py-0">
-                  <div className="flex items-center justify-center mb-8 relative">
-                     <img src={rghsLogo} alt="RGHS Scheme" className="h-[120px] w-auto drop-shadow-md" />
-                  </div>
-                  <div className="bg-[#0056b3] text-white px-8 py-2 text-[15px] font-medium absolute bottom-6 shadow-md w-10/12 text-center">राजस्थान गवर्नमेंट हेल्थ स्कीम</div>
                </div>
             </div>
          </section>
@@ -423,7 +437,7 @@ function App() {
          <section className="py-20 px-8 max-w-[1400px] mx-auto">
             <div className="text-center mb-16">
                <h3 className="font-bold text-gray-600 tracking-[0.2em] text-sm mb-4">WELCOME TO</h3>
-               <h2 className="text-3xl md:text-[40px] font-black text-[#1D70B8] uppercase tracking-wide leading-tight">RGHS APPROVED ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE</h2>
+               <h2 className="text-3xl md:text-[40px] font-black text-[#1D70B8] uppercase tracking-wide leading-tight">RADHE DENTAL HOSPITAL</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-24 max-w-5xl mx-auto">
@@ -444,9 +458,8 @@ function App() {
             <div className="flex flex-col lg:flex-row items-start gap-12 max-w-6xl mx-auto">
                {/* Doctor Card */}
                <div className="w-full lg:w-[45%] bg-white rounded-t-[100px] rounded-b-3xl shadow-xl overflow-hidden border border-gray-100" data-aos="fade-right">
-                  <div className="h-[400px] relative overflow-hidden rounded-t-[100px]">
-                     <img src={doctorPortrait} alt="Dr. Anand" className="w-full h-full object-cover object-center" />
-                     <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+                  <div className="h-[420px] relative overflow-hidden rounded-t-[100px]">
+                     <img src={doctorPortrait} alt="Dr. Savita Yadav" className="w-full h-full object-cover" style={{ objectPosition: 'center 45%' }} />
                   </div>
 
                   <div className="bg-[#1b64a6] text-white text-center py-3 px-6">
@@ -465,11 +478,11 @@ function App() {
                   <h3 className="text-[34px] text-gray-800 mb-8 font-serif leading-snug font-normal">Giving You The Best Smile That You Deserve!</h3>
 
                   <div className="text-[#666] space-y-5 leading-[1.8] text-[15px]">
-                     <p>Anand Dental Jaipur provides excellent dental service and care to patients. With years of experience in various dental procedures, our team is passionate about helping patients achieve and maintain optimal oral health and a beautiful smile.</p>
+                     <p>Radhe Dental Hospital provides excellent dental service and care to patients. With years of experience in various dental procedures, our team is passionate about helping patients achieve and maintain optimal oral health and a beautiful smile.</p>
 
                      <p>We use the latest technology and equipment to ensure the safety and comfort of our patients. We follow the highest standards of hygiene and sterilization in our clinic. Our team is friendly and compassionate, listening to patients' needs and concerns.</p>
 
-                     <p>Anand Dental is committed to providing quality dental care at affordable prices. We are RGHS approved and accept insurance. We welcome new patients and referrals, and strive to make every visit a pleasant and satisfying experience.</p>
+                     <p>Radhe Dental Hospital is committed to providing quality dental care at affordable prices. We accept insurance and flexible payment options. We welcome new patients and referrals, and strive to make every visit a pleasant and satisfying experience.</p>
                   </div>
                </div>
             </div>
@@ -595,79 +608,31 @@ function App() {
             </div>
          </section>
 
-         {/* RGHS Empaneled Hospitals Section */}
-         <section className="py-16 px-1 sm:px-2 md:px-6 max-w-[1400px] mx-auto text-center relative z-20 mb-12">
-            <div className="bg-white rounded-[20px] md:rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-4 sm:p-6 md:p-10 lg:p-16 border-t-[10px] border-[#00a651]" data-aos="fade-up">
-               <h2 className="text-[30px] md:text-[44px] font-serif text-[#333] mb-4 tracking-wide">RGHS Empaneled Hospitals in Jaipur</h2>
-               <p className="text-gray-600 text-lg mb-10 max-w-3xl mx-auto">
-                  We are proud to be officially listed among the trusted healthcare providers for the Rajasthan Government Health Scheme in Jaipur City.
-               </p>
-               
-               <div className="bg-[#f8fcf9] rounded-[10px] md:rounded-[20px] p-2 sm:p-4 md:p-8 border border-[#c3edd4] relative text-left" data-aos="zoom-in" data-aos-delay="100">
-                  
-                  {/* Table of Empaneled Hospitals */}
-                  <div className="overflow-x-auto pb-4">
-                     <table className="w-full text-left border-collapse min-w-[600px] md:min-w-[1100px] shadow-sm rounded-lg overflow-hidden">
-                        <thead>
-                           <tr className="bg-[#00a651] text-white text-[11px] md:text-[12px] uppercase tracking-wider">
-                              <th className="p-2 md:p-3 border border-[#008f45] text-center w-10 md:w-12">S.No</th>
-                              <th className="p-2 md:p-3 border border-[#008f45] w-[140px] md:w-[200px]">Hospital Name</th>
-                              <th className="hidden md:table-cell p-3 border border-[#008f45] w-[250px]">Address</th>
-                              <th className="hidden lg:table-cell p-3 border border-[#008f45]">District</th>
-                              <th className="hidden lg:table-cell p-3 border border-[#008f45]">City</th>
-                              <th className="p-2 md:p-3 border border-[#008f45]">Specialty</th>
-                              <th className="p-2 md:p-3 border border-[#008f45]">Phone</th>
-                              <th className="hidden lg:table-cell p-3 border border-[#008f45] whitespace-nowrap">Valid From</th>
-                              <th className="hidden lg:table-cell p-3 border border-[#008f45] whitespace-nowrap">Valid To</th>
-                              <th className="p-2 md:p-3 border border-[#008f45] text-center">Status</th>
-                           </tr>
-                        </thead>
-                        <tbody className="text-[11px] md:text-[12px] text-gray-700 bg-white">
-                           {jaipurHospitals.map((hospital, index) => {
-                              const isAnand = hospital.name.toUpperCase().includes('ANAND DENTAL');
-                              return (
-                                 <tr 
-                                    key={index} 
-                                    className={isAnand ? 'bg-[#e0f4e8] border-2 border-[#00a651] font-bold shadow-[inset_0_0_10px_rgba(0,166,81,0.2)] transform md:scale-[1.01] relative z-10' : 'border-b border-gray-200 hover:bg-gray-50 transition-colors'}
-                                 >
-                                    <td className={`p-2 md:p-3 border-r border-gray-200 text-center align-middle ${isAnand ? 'border-[#00a651] text-[#00695c]' : ''}`}>{hospital.sNo}</td>
-                                    <td className={`p-2 md:p-3 border-r border-gray-200 align-middle ${isAnand ? 'border-[#00a651] text-[#00695c] text-[12px] md:text-[13px]' : ''}`}>
-                                       {isAnand && <Star className="w-3 md:w-3.5 h-3 md:h-3.5 inline mr-1 text-[#f9a825]" />}
-                                       {hospital.name}
-                                    </td>
-                                    <td className={`hidden md:table-cell p-3 border-r border-gray-200 align-middle ${isAnand ? 'border-[#00a651]' : ''}`}>{hospital.address}</td>
-                                    <td className={`hidden lg:table-cell p-3 border-r border-gray-200 align-middle ${isAnand ? 'border-[#00a651]' : ''}`}>{hospital.district}</td>
-                                    <td className={`hidden lg:table-cell p-3 border-r border-gray-200 align-middle ${isAnand ? 'border-[#00a651]' : ''}`}>{hospital.city}</td>
-                                    <td className={`p-2 md:p-3 border-r border-gray-200 align-middle ${isAnand ? 'border-[#00a651]' : ''}`}>{hospital.specialty}</td>
-                                    <td className={`p-2 md:p-3 border-r border-gray-200 align-middle whitespace-nowrap ${isAnand ? 'border-[#00a651]' : ''}`}>{hospital.phone}</td>
-                                    <td className={`hidden lg:table-cell p-3 border-r border-gray-200 align-middle whitespace-nowrap ${isAnand ? 'border-[#00a651]' : ''}`}>{hospital.from}</td>
-                                    <td className={`hidden lg:table-cell p-3 border-r border-gray-200 align-middle whitespace-nowrap ${isAnand ? 'border-[#00a651]' : ''}`}>{hospital.to}</td>
-                                    <td className={`p-2 md:p-3 text-center align-middle font-bold ${isAnand ? 'text-[#00a651]' : ''}`}>{hospital.status}</td>
-                                 </tr>
-                              );
-                           })}
-                        </tbody>
-                     </table>
-                  </div>
-
-               </div>
-            </div>
-         </section>
-
-         {/* Surgery Section */}
-         <section className="py-16 text-center max-w-4xl mx-auto px-4">
-            <div className="relative group overflow-hidden h-[500px] rounded-lg shadow-xl">
+         {/* Clinic Gallery Slider Section */}
+         <section className="py-16 text-center max-w-4xl mx-auto px-4" data-aos="fade-up">
+            <div className="relative group overflow-hidden h-[500px] md:h-[540px] rounded-2xl shadow-2xl border border-gray-100 bg-black/5">
                {surgeryImages.map((img, index) => (
                   <img
                      key={index}
                      src={img}
-                     alt={`Surgery Procedure ${index + 1}`}
-                     className={`absolute top-0 left-0 w-full h-[500px] object-cover transition-opacity duration-1000 ease-in-out ${index === currentSurgerySlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                     alt={`Radhe Dental Hospital ${index + 1}`}
+                     className={`absolute top-0 left-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out ${index === currentSurgerySlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                   />
                ))}
-               <div className="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity z-20">
-                  <button onClick={prevSurgerySlide} className="bg-white/80 p-2 rounded-full shadow-lg text-blue-600 hover:bg-white backdrop-blur-sm"><ChevronLeft className="w-8 h-8" /></button>
-                  <button onClick={nextSurgerySlide} className="bg-white/80 p-2 rounded-full shadow-lg text-blue-600 hover:bg-white backdrop-blur-sm"><ChevronRight className="w-8 h-8" /></button>
+               <div className="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity z-20 pointer-events-none">
+                  <button onClick={prevSurgerySlide} className="pointer-events-auto bg-white/90 p-3 rounded-full shadow-lg text-blue-600 hover:bg-white hover:scale-110 transition-all backdrop-blur-sm"><ChevronLeft className="w-6 h-6" /></button>
+                  <button onClick={nextSurgerySlide} className="pointer-events-auto bg-white/90 p-3 rounded-full shadow-lg text-blue-600 hover:bg-white hover:scale-110 transition-all backdrop-blur-sm"><ChevronRight className="w-6 h-6" /></button>
+               </div>
+               {/* Dots Indicator */}
+               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center space-x-2 z-20 bg-black/30 backdrop-blur-sm px-4 py-1.5 rounded-full">
+                  {surgeryImages.map((_, index) => (
+                     <button
+                        key={index}
+                        onClick={() => setCurrentSurgerySlide(index)}
+                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === currentSurgerySlide ? 'bg-white w-6' : 'bg-white/60 hover:bg-white/90'}`}
+                        aria-label={`Go to slide ${index + 1}`}
+                     />
+                  ))}
                </div>
             </div>
          </section>
@@ -675,7 +640,7 @@ function App() {
          {/* Dentist Knows Best Section */}
          <section className="relative w-full min-h-[900px] flex items-center bg-white mt-12 overflow-hidden">
             {/* Background Image */}
-            <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${dentistBlurBg})`, backgroundSize: 'cover', backgroundPosition: 'center right' }}></div>
+            <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${doctorWhiteCoatBg})`, backgroundSize: 'cover', backgroundPosition: 'right 15%' }}></div>
 
             {/* White Gradient Fade Overlay */}
             <div className="absolute inset-0 z-10 pointer-events-none" style={{
@@ -695,12 +660,12 @@ function App() {
                   <div className="space-y-12">
                      <div>
                         <h3 className="text-[22px] font-serif text-[#444] mb-3">Don't rush when you brush!</h3>
-                        <p className="text-[14px] text-[#666] leading-[1.8] tracking-wide">"<span className="font-bold text-[#444]">Take your time, make it shine!</span> At Anand Dental, we encourage thorough brushing for a radiant smile that lasts a lifetime."</p>
+                        <p className="text-[14px] text-[#666] leading-[1.8] tracking-wide">"<span className="font-bold text-[#444]">Take your time, make it shine!</span> At Radhe Dental Hospital, we encourage thorough brushing for a radiant smile that lasts a lifetime."</p>
                      </div>
 
                      <div>
                         <h3 className="text-[22px] font-serif text-[#444] mb-3">Visit your dentist once in 6 months</h3>
-                        <p className="text-[14px] text-[#666] leading-[1.8] tracking-wide">"<span className="font-bold text-[#444]">Regular check-ups are key to oral health.</span> Visiting Anand Dental every six months helps catch potential issues early, ensures your teeth are professionally cleaned, and keeps your smile shining bright."</p>
+                        <p className="text-[14px] text-[#666] leading-[1.8] tracking-wide">"<span className="font-bold text-[#444]">Regular check-ups are key to oral health.</span> Visiting Radhe Dental Hospital every six months helps catch potential issues early, ensures your teeth are professionally cleaned, and keeps your smile shining bright."</p>
                      </div>
 
                      <div>
@@ -787,7 +752,7 @@ function App() {
                      <div className="w-full p-10 md:p-16 pt-20 pb-16 bg-[#6bb3ff] flex flex-col text-center items-center justify-center rounded-bl-[40px] rounded-br-[40px] shadow-[0_20px_40px_rgba(0,0,0,0.15)] relative z-20">
                         <h2 className="text-[34px] md:text-[40px] font-serif text-white mb-8 leading-snug tracking-wide">We are A Full-Service<br />Dental Hospital</h2>
                         <p className="text-white text-[13px] leading-[1.8] font-medium max-w-lg mx-auto mb-10">
-                           "<span className="font-bold">Anand Dental: Your All-Inclusive Dental Care Destination.</span> We offer various dental services, from preventive care and routine check-ups to advanced treatments. Our team of experienced professionals is dedicated to providing personalised care for every member of your family. Trust us to keep your family's smiles healthy and bright."
+                           "<span className="font-bold">Radhe Dental Hospital: Your All-Inclusive Dental Care Destination.</span> We offer various dental services, from preventive care and routine check-ups to advanced treatments. Our team of experienced professionals is dedicated to providing personalised care for every member of your family. Trust us to keep your family's smiles healthy and bright."
                         </p>
                         <Link to="/services" className="inline-block bg-[#4aa5ff] hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full shadow-lg transition">
                            Get Started
@@ -796,7 +761,7 @@ function App() {
 
                      {/* Image with Radial Fade */}
                      <div className="w-full relative h-[400px]">
-                        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${receptionBg})` }}></div>
+                        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${clinicCabinBg})` }}></div>
                         {/* Gradient overlay to create the soft white glowing mask effect */}
                         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(255,255,255,0.7)_50%,rgba(255,255,255,1)_80%,rgba(255,255,255,1)_100%)]"></div>
                      </div>
@@ -911,23 +876,21 @@ function App() {
                      </div>
                   </div>
 
-                  {/* Column 2: Anand Dental */}
+                  {/* Column 2: Radhe Dental */}
                   <div className="w-full md:w-[35%] flex flex-col" data-aos="fade-up" data-aos-delay="200">
                      <div className="flex items-start space-x-4 mb-6">
                         <div className="bg-white rounded-full p-1 mt-1 shadow-sm">
                            <Clock className="w-4 h-4 text-[#1762c9]" />
                         </div>
                         <div>
-                           <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL<br />AND DIAGNOSTIC CENTRE</h4>
-                           <p className="text-[14px] font-medium leading-relaxed max-w-[280px] text-white">
-                              45,46, Opp. Parth Chiranjivi Complex,<br />
-                              Hanuman Vatika A, Gokulpura,<br />
-                              Jaipur, Rajasthan 302012
+                           <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RADHE DENTAL HOSPITAL</h4>
+                           <p className="text-[14px] font-medium leading-relaxed max-w-[340px] text-white">
+                              US Plaza Building, Kanakpura Road,<br />Near US Paradise, Sangh Shakti Road,<br />Ashok Vihar Vistar, Gokulpura,<br />Jaipur, Rajasthan 302012
                            </p>
                         </div>
                      </div>
                      <div className="w-full h-[200px] rounded-sm overflow-hidden border-2 border-white/20 shadow-lg mt-auto">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.7639586648697!2d75.70951398053819!3d26.942696516369644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db30020854b0f%3A0xd2dfd395e3eb1f13!2sANAND%20DENTAL!5e0!3m2!1sen!2sin!4v1791226542150!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.091316719879!2d75.7259627!3d26.932319399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3d96bffdafd%3A0x6f406c3aec646c5f!2sRadhe%20Dental%20Hospital!5e0!3m2!1sen!2sin!4v1791771516836!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
                      </div>
                   </div>
 

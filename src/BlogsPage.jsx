@@ -4,7 +4,6 @@ import { Menu, X } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import hospitalLogo from './assets/logo.png';
-import rghsLogo from './assets/RGHSScheme.png';
 import dentistBlurBg from './assets/dentist_blur_bg.jpg';
 import Footer from './Footer';
 import { blogsData } from './data/blogsData';
@@ -29,9 +28,8 @@ export default function BlogsPage() {
          <header className="bg-white py-3 px-8 sticky top-0 z-50 shadow-sm">
             <div className="max-w-[1250px] mx-auto flex justify-between items-center relative">
                <div className="flex items-center space-x-6">
-                  <img src={hospitalLogo} alt="Anand Dental Jaipur Logo" className="h-[70px] w-auto" />
-                  <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE</span>
-                  <img src={rghsLogo} alt="RGHS Scheme" className="h-[90px] w-auto ml-2 hidden sm:block" />
+                  <img src={hospitalLogo} alt="Radhe Dental Hospital Logo" className="h-[70px] w-auto" />
+                  <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RADHE DENTAL HOSPITAL</span>
                </div>
 
                {/* Desktop Nav */}
@@ -71,7 +69,7 @@ export default function BlogsPage() {
                <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 drop-shadow-md">Dental Health Blog</h1>
                <p className="text-lg md:text-xl font-medium text-blue-100 drop-shadow-sm mb-8">Tips, insights, and expert advice for a healthier smile.</p>
                <div className="inline-block bg-white text-[#0066cc] px-6 py-3 rounded-full font-bold text-sm md:text-base shadow-lg border-2 border-white transition-transform hover:scale-105">
-                  ✅ RGHS, ECHS, Ayushman, CGHS & All TPA Facilities Available
+                  ✅ ECHS, Ayushman, CGHS & All TPA Facilities Available
                </div>
             </div>
          </div>

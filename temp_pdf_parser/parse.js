@@ -50,7 +50,7 @@ pdfParser.on("pdfParser_dataReady", pdfData => {
     let clean = [...new Set(hospitals)];
     // Ensure ANAND DENTAL is in there
     let hasAnand = clean.some(n => n.toUpperCase().includes('ANAND DENTAL'));
-    if (!hasAnand) clean.unshift("ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE");
+    if (!hasAnand) clean.unshift("RADHE DENTAL HOSPITAL");
     
     fs.writeFileSync('../src/data/jaipurHospitals.json', JSON.stringify(clean, null, 2));
     console.log(`Extracted ${clean.length} hospitals.`);

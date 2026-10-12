@@ -4,7 +4,6 @@ import { Phone, Mail, Clock, ShieldPlus, Menu, X } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import hospitalLogo from './assets/logo.png';
-import rghsLogo from './assets/RGHSScheme.png';
 import dentistMaskBg from './assets/dentist_mask_bg.jpg';
 import Footer from './Footer';
 
@@ -27,9 +26,8 @@ export default function BookAppointmentPage() {
       <header className="bg-white py-3 px-8 sticky top-0 z-50 shadow-sm">
         <div className="max-w-[1250px] mx-auto flex justify-between items-center relative">
           <div className="flex items-center space-x-6">
-            <img src={hospitalLogo} alt="Anand Dental Jaipur Logo" className="h-[70px] w-auto" />
-            <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE</span>
-            <img src={rghsLogo} alt="RGHS Scheme" className="h-[90px] w-auto ml-2" />
+            <img src={hospitalLogo} alt="Radhe Dental Hospital Logo" className="h-[70px] w-auto" />
+            <span className="ml-3 lg:ml-4 text-[11px] md:text-xs lg:text-sm font-black text-[#1D70B8] uppercase tracking-wider hidden sm:block max-w-[200px] md:max-w-[250px] lg:max-w-[350px] leading-snug">RADHE DENTAL HOSPITAL</span>
           </div>
 
           {/* Desktop Nav */}
@@ -178,19 +176,19 @@ export default function BookAppointmentPage() {
               </div>
             </div>
 
-            {/* Col 2: Anand Dental */}
+            {/* Col 2: Radhe Dental */}
             <div className="w-full md:w-[35%] flex flex-col" data-aos="fade-up" data-aos-delay="200">
               <div className="flex items-start space-x-4 mb-6">
                 <div className="bg-white rounded-full p-1 mt-1 shadow-sm"><Clock className="w-4 h-4 text-[#1762c9]" /></div>
                 <div>
-                  <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL<br />AND DIAGNOSTIC CENTRE</h4>
-                  <p className="text-[14px] font-medium leading-relaxed max-w-[280px] text-white">
-                    45,46, Opp. Parth Chiranjivi Complex,<br />Hanuman Vatika A, Gokulpura,<br />Jaipur, Rajasthan 302012
+                  <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RADHE DENTAL HOSPITAL</h4>
+                  <p className="text-[14px] font-medium leading-relaxed max-w-[340px] text-white">
+                    US Plaza Building, Kanakpura Road,<br />Near US Paradise, Sangh Shakti Road,<br />Ashok Vihar Vistar, Gokulpura,<br />Jaipur, Rajasthan 302012
                   </p>
                 </div>
               </div>
               <div className="w-full h-[200px] rounded-sm overflow-hidden border-2 border-white/20 shadow-lg mt-auto">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.7639586648697!2d75.70951398053819!3d26.942696516369644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db30020854b0f%3A0xd2dfd395e3eb1f13!2sANAND%20DENTAL!5e0!3m2!1sen!2sin!4v1791226542150!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.091316719879!2d75.7259627!3d26.932319399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3d96bffdafd%3A0x6f406c3aec646c5f!2sRadhe%20Dental%20Hospital!5e0!3m2!1sen!2sin!4v1791771516836!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin" />
               </div>
             </div>
 
@@ -199,9 +197,9 @@ export default function BookAppointmentPage() {
               <div className="flex items-start space-x-4 mb-6">
                 <div className="bg-white rounded-full p-1 mt-1 shadow-sm"><Clock className="w-4 h-4 text-[#1762c9]" /></div>
                 <div>
-                  <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RGHS APPROVED ANAND DENTAL HOSPITAL<br />AND DIAGNOSTIC CENTRE (BRANCH 2)</h4>
-                  <p className="text-[14px] font-medium leading-relaxed max-w-[280px] text-white">
-                    45,46, Opp. Parth Chiranjivi Complex,<br />Hanuman Vatika A, Gokulpura,<br />Jaipur, Rajasthan 302012
+                  <h4 className="font-serif text-[16px] mb-4 font-normal tracking-wide uppercase leading-snug">RADHE DENTAL HOSPITAL (BRANCH 2)</h4>
+                  <p className="text-[14px] font-medium leading-relaxed max-w-[340px] text-white">
+                    US Plaza Building, Kanakpura Road,<br />Near US Paradise, Sangh Shakti Road,<br />Ashok Vihar Vistar, Gokulpura,<br />Jaipur, Rajasthan 302012
                   </p>
                 </div>
               </div>

@@ -12,9 +12,9 @@ export default function Footer() {
 
         {/* Col 1: Logo + About */}
         <div>
-          <img src={hospitalLogo} alt="Anand Dental Jaipur" className="h-[70px] w-auto bg-white rounded-lg p-1 mb-5" />
+          <img src={hospitalLogo} alt="Radhe Dental Hospital" className="h-[75px] w-auto bg-white rounded-xl p-2 mb-5 shadow-md" />
           <p className="text-gray-400 text-[13.5px] leading-[1.9] mb-5">
-            RGHS APPROVED ANAND DENTAL HOSPITAL AND DIAGNOSTIC CENTRE is committed to providing world-class dental care with a gentle touch. Your smile is our mission.
+            RADHE DENTAL HOSPITAL is committed to providing world-class dental care with a gentle touch. Your smile is our mission.
           </p>
           <div className="flex space-x-3">
             {/* Facebook */}
@@ -83,7 +83,7 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="w-4 h-4 mt-0.5 text-[#4aa5ff] shrink-0" />
-              <p>45,46, Opp. Parth Chiranjivi Complex,<br />Hanuman Vatika A, Gokulpura,<br />Jaipur, Rajasthan 302012</p>
+              <p>US Plaza Building, Kanakpura Road,<br />Near US Paradise, Sangh Shakti Road,<br />Ashok Vihar Vistar, Gokulpura,<br />Jaipur, Rajasthan 302012</p>
             </li>
           </ul>
         </div>
@@ -122,9 +122,9 @@ export default function Footer() {
 
       {/* ── Bottom Bar ── */}
       <div className="max-w-[1300px] mx-auto px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-[12.5px] text-gray-500">
-        <p>© {new Date().getFullYear()} <span className="text-white font-semibold">Anand Dental Jaipur</span>. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} <span className="text-white font-semibold">Radhe Dental Hospital</span>. All rights reserved.</p>
         <p className="flex items-center gap-1">
-          Made with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400 mx-0.5" /> by Anand Dental Team
+          Made with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400 mx-0.5" /> by Radhe Dental Team
         </p>
         <div className="flex gap-5">
           <a href="#" className="hover:text-white transition">Privacy Policy</a>
